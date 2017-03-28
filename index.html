@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+</head>
+<body class=" blue lighten-5">
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+      $('.carousel').carousel();
+    });
+        
+        function showImage(imgName) {
+				var curImage = document.getElementById('currentImg');
+				var thePath = 'image/';
+				var theSource = thePath + imgName;
+				
+				curImage.src = theSource;
+				
+			}
+</script>      
+
+      	
+      		<nav>
+      			<div class="nav-wrapper light-blue lighten-1 z-depth-5" style="height: 100px;">
+      				<ul class="left hide-on-med-and-down" style="margin-top: 15px;">
+      					<li style="margin-left: 20px;" ><a class="waves-effect waves-light btn lime accent-2 black-text waves-orange hoverable">Upload</a></li>
+      					<li style="margin-left: 20px;" ><a class="waves-effect waves-light btn lime accent-2 black-text waves-orange hoverable">Capture URL</a></li>
+      					<li style="margin-left: 20px;"><a class="waves-effect waves-light btn green accent-3 white-text waves-orange hoverable">Download</a></li>
+      				</ul>
+      				<ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-top: 15px;">
+        				<li style="margin-right: 30px;">  <a class="waves-effect waves-white btn-flat white-text">Donate</a></li>
+        				<li style="margin-right: 30px;">  <a class="waves-effect waves-white btn-flat white-text">Menu </a></li>
+     				</ul>
+
+      			</div>
+      		</nav>
+      		<br><br><br>
+      <div class="row">
+      	<div class="col s3" >
+      	<div class="container">
+      		<h4 class="center">SHOW</h4>
+      		<hr>
+      		<div class="center">
+      		<a class="waves-effect waves-white btn-flat black-text ">ALL</a>
+      		<br>
+      		<a class="waves-effect waves-white btn-flat black-text ">Laptop</a>
+      		<br>
+      		<a class="waves-effect waves-white btn-flat black-text ">HOME</a>
+      		<br>
+      		<a class="waves-effect waves-white btn-flat black-text ">TABLET</a>
+      		<br>
+      		<a class="waves-effect waves-white btn-flat black-text ">IMAC</a>
+      		<br>
+      		<a class="waves-effect waves-white btn-flat black-text ">OTHER</a>
+      		<br><br>
+      		<hr>
+      		<br><br>
+      		<div class="card hoverable z-depth-3">
+      			<div class="card-content">
+      				<strong>Follow and get notified when new environments are added :</strong>
+      					<br><br>
+      				<i class="medium material-icons hoverable">stars</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="medium material-icons hoverable">android</i>
+      			</div>	
+      		</div>	
+      	</div>
+      	</div>
+
+      	</div>
+      	<div class="col s9">			
+      		<div class="container">
+      			<div class="card hoverable z-depth-5" style="height: 500px;">
+      				<div class="card-content">
+      					<div class="card-image">
+      						<img src="image/image-1.jpg" id="currentImg">
+      					</div>	
+      				</div>
+      			</div>
+      			<br><br>
+      			<h4 class="center">Choose Environments</h4>
+      			<hr>
+      			<div class="center">Click on any image below to change the above image</div>
+      			 <div class="carousel">
+    				<a class="carousel-item" href="#one!"><img src="image/image-2.png" onclick="showImage('image-2.png');"></a>
+    				<a class="carousel-item" href="#two!"><img src="image/image-1.jpg" onclick="showImage('image-1.jpg');"></a>
+    				<a class="carousel-item" href="#three!"><img src="image/image-3.jpg" onclick="showImage('image-3.jpg');"></a>
+    				<a class="carousel-item" href="#four!"><img src="image/image-4.jpg" onclick="showImage('image-4.jpg');"></a>
+    				<a class="carousel-item" href="#five!"><img src="image/image-5.jpg" onclick="showImage('image-5.jpg');"></a>
+  				 </div>
+      		</div>
+      	</div>	
+	  </div>	      	
+   
+
+
+</body>
+</html>
